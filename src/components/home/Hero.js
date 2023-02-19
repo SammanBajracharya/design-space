@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import Btn1 from '../UI/Btn1';
 import { Link } from 'react-router-dom';
-import { useInView } from 'react-intersection-observer';
 
 const Hero = () => {
 
