@@ -14,6 +14,7 @@ import { useDispatch } from 'react-redux';
 import { setProjectData } from './features/Project/projectSlice';
 import { client } from './client';
 import { setArticleData } from './features/Article/articleSlice';
+import ScrollToTop from './ScrollToTop';
 
 const routes = [
   { path: '/', element: <HomePage /> },
@@ -55,6 +56,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <ScrollToTop />
       <Routes>
         {routes.map(({ path, element }, i) => (
           <Route key={i} path={path} element={element} />
